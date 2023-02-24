@@ -8,6 +8,7 @@ public class Robi {
 	int y;
 	int myColor;
 	int speed = 5;
+	int speed2 = 1;
 	private int score = 0;
 	PApplet window;
 
@@ -32,7 +33,7 @@ public class Robi {
 
 	// Fähigkeiten	  
 	public void moveDown(){
-		y +=   speed;
+		y += speed;
 	}
 
 	public void moveUp(){
@@ -45,6 +46,22 @@ public class Robi {
 
 	public void moveRight(){
 		x = getX() + speed;
+	}
+	// Fähigkeiten	  
+	public void moveDownKI(){
+		y +=   speed2;
+	}
+
+	public void moveUpKI(){
+		y -= speed2;
+	}
+
+	public void moveLeftKI(){
+		x = getX() - speed2;
+	}
+
+	public void moveRightKI(){
+		x = getX() + speed2;
 	}
 
 	public void drawRobi(){
